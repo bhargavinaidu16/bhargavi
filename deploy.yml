@@ -1,0 +1,9 @@
+ - name: Deploy maven
+   hosts: localhost
+   become: yes
+   tasks:
+     - name: create task
+       file:
+         path: /opt/deployment
+         state: directory
+         mode: '0755'
