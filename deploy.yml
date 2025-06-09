@@ -1,6 +1,6 @@
  - name: Deploy maven
    hosts: localhost
-   become: yes
+   become: no
    tasks:
      - name: create task
        file:
